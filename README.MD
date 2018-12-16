@@ -1,6 +1,6 @@
-# Squarified Treemap Haotian Liu
+# Squarified Treemap
 
-This is a reproduction of paper [Squariﬁed Treemaps](https://www.win.tue.nl/~vanwijk/stm.pdf).
+This is a reproduction of paper [Squarified Treemaps](https://www.win.tue.nl/~vanwijk/stm.pdf).
 
 #### Features
 - Reproduced the algorithm and results of the paper

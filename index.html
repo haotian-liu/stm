@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <title>柳昊天</title>
+  <style type="text/css">
+    /* plz write css code here */
+    body {
+      font-family: 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC', 'Microsoft YaHei', 'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'ST Heiti', 'SimHei', 'WenQuanYi Zen Hei Sharp', 'sans-serif';
+    }
+    svg .rect:hover {
+      fill: #333;
+    }
+    svg .text, svg .text:hover {
+      font-family: 'Courier New', Courier, monospace;
+      pointer-events: none;
+    }
+    #container {
+      display: flex;
+    }
+    #board-container {
+      flex: 1;
+    }
+    #info-container {
+      flex: 0 0 25%;
+      padding-right: 20px;
+    }
+    li.todo {
+      font-style: italic;
+    }
+    span.author {
+      font-size: 18px;
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+  <!-- plz insert your doms under the main div element -->
+  <div id="main">
+    <h1>Squarified Treemap <span class="author">Haotian Liu</span></h1>
+    <div id="container">
+      <div id="info-container">
+        <div id="description">
+          This is a reproduction of paper <a href="https://www.win.tue.nl/~vanwijk/stm.pdf" target="_blank">Squariﬁed Treemaps</a>.
+          <h4>Features</h4>
+          <ul>
+            <li>Reproduced the algorithm and results of the paper</li>
+            <li>Automatic data generation</li>
+            <li>View node hierachical relationship</li>
+            <li>Custom depth and width to generate visualize data</li>
+            <li>Animation support for all transformations (can interrupt)</li>
+            <li class="todo">(TODO) Step-in and step-out views</li>
+            <li class="todo">(TODO) Refactored code and APIs</li>
+          </ul>
+        </div>
+        <hr>
+        <div id="input">
+          Carefully choose depth and width (width<sup>depth</sup> should not be too large), or it might bomb your CPU :)
+          <br>
+          Depth: <input type="text" id="input_depth" value="5">
+          Width: <input type="text" id="input_width" value="3">
+          <a class="btn" href="javascript:;" onclick="gen()">Random</a>
+        </div>
+        <hr>
+        <div id="info">
+        </div>
+      </div>
+      <div id="board-container">
+        <svg id="board" xmlns="http://www.w3.org/2000/svg">
+        </svg>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

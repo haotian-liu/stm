@@ -12,4 +12,4 @@ This is a reproduction of paper [Squarified Treemaps](https://www.win.tue.nl/~va
 - *(TODO) Refactored code and APIs*
 
 #### Online Demo
-https://liuhaotian.me/stm/
+[https://liuhaotian.me/stm/](HERE for preview)
